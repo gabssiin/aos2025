@@ -4,13 +4,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-   "start": "nodemon --exec babel-node src/index.js"
+    "start": "nodemon --exec babel-node api/index.js"
   },
   "keywords": [],
   "author": "gabssiin <gabriel.willian.br@gmail.com> (https://example.com/)",
   "license": "MIT",
   "description": "Tutorial node.js + Express + PostegreSQL",
   "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
     "nodemon": "^3.1.10"
   },
   "devDependencies": {

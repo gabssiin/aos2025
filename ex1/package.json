@@ -11,6 +11,7 @@
   "license": "MIT",
   "description": "Tutorial node.js + Express + PostegreSQL",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "nodemon": "^3.1.10"

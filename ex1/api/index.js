@@ -7,7 +7,12 @@ console.log("MY_SECRET", process.env.MY_SECRET);
 console.log("PYTHON_ROOT", process.env.MY_OTHER_SECRET);
 
 const app = express();
-app.use(cors());
+
+var corsOptions = {
+  origin: ['http://example.com', '*'],
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+app.use(cors(corsOptions));
 
 app.use((req,res,next)=>{
   console.log(`${req.method} - ${req.path} - ${req.ip}`);
